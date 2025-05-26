@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer Badge - Maps</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2e3a59;
+            color: white;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        #map {
+            height: 500px;
+            margin: 20px auto;
+            max-width: 90%;
+            border-radius: 10px;
+            border: 2px solid #2e3a59;
+        }
+
+        footer {
+            background-color: #2e3a59;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌍 Tamer Badge</h1>
+        <p>Découvre et explore des cartes impressionnantes</p>
+    </header>
+
+    <div id="map"></div>
+
+    <footer>
+        © 2025 Tamer Badge. Tous droits réservés.
+    </footer>
+
+    <!-- Script Leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Création de la carte centrée sur une position par défaut (ex : Paris)
+        var map = L.map('map').setView([48.8566, 2.3522], 10);
+
+        // Ajout des tuiles OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Marqueur exemple
+        L.marker([48.8566, 2.3522]).addTo(map)
+            .bindPopup("Bienvenue sur Tamer Badge !<br>Voici Paris.")
+            .openPopup();
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer Badge - Maps</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2e3a59;
+            color: white;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        #map {
+            height: 500px;
+            margin: 20px auto;
+            max-width: 90%;
+            border-radius: 10px;
+            border: 2px solid #2e3a59;
+        }
+
+        footer {
+            background-color: #2e3a59;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌍 Tamer Badge</h1>
+        <p>Découvre et explore des cartes impressionnantes</p>
+    </header>
+
+    <div id="map"></div>
+
+    <footer>
+        © 2025 Tamer Badge. Tous droits réservés.
+    </footer>
+
+    <!-- Script Leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Création de la carte centrée sur une position par défaut (ex : Paris)
+        var map = L.map('map').setView([48.8566, 2.3522], 10);
+
+        // Ajout des tuiles OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Marqueur exemple
+        L.marker([48.8566, 2.3522]).addTo(map)
+            .bindPopup("Bienvenue sur Tamer Badge !<br>Voici Paris.")
+            .openPopup();
+    </script>
+
+</body>
+</html>
+
+<link rel="SITEWEB.HTML" href="STYLE.CSS">
